@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+   
+    background: linear-gradient(rgb(61, 61, 144), rgb(31, 15, 85));
+    height: 1000px;
+}
+h1{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.flex{
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+label{
+    color: white;
+}
+fieldset {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px groove;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.388);
+    
+}
+legend{
+    color: white;
+    font-weight: bold;
+}
+input {
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.871);
+}
+.tv{
+    z-index: -10;
+    margin-bottom: -21rem;
+    margin-right: 40rem;
+    width: 525px;
+}
+#spinach {
+    width: 500px;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    border-radius: 100%;
+}
+
+.popeye{
+position: absolute;
+right: 3rem;
+bottom: -20rem;
+
+}
+
+@keyframes move {
+    0%{
+transform: translateY(0);
+    }
+    50%{
+transform: translateY(-20px);
+    }
+    100%{
+transform: translateY(0);
+    }
+}
+.stool{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left:12rem;
+    bottom: -16rem;
+    z-index: -50;
+}
+
+video {
+    width: 400px;
+    border-radius: 3%;
+}
+
+.hide {
+    display: none;
+}
+
+.bubble{
+    background-color: rgba(255, 255, 255, 0.755);
+    width: 300px;
+    height: 200px;
+    right: 20px;
+    border-radius: 20%;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 7rem;
+}

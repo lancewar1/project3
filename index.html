@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Media Player</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/video_helpers.js"></script>
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body id="background">
+    <h1>Let's Sing with Popeye!</h1>
+    <img class="tv" src="assets/imgbin-old-grey-tv-set-classic-gray-television-TT7Ky4VEvn8i2z8u7kjWLd6sz.jpg" alt="">
+    <img class="stool" src="assets/pngfind.com-stool-png-694065.png" alt="">
+    <div class="popeye hide">
+        <img src="assets/Popeye-Flex-e1637717888907.webp" alt="">
+    </div>
+    <div class="spinach">
+        <img class="hide" id="spinach" src="assets/gil-ndjouwou-3YTtK5LRtDI-unsplash.jpg" alt="">
+    </div>
+    <div class="flex">
+        <video id="vid" controls>
+            <source src="assets/005.5 Let's Sing with Popeye (1934).mp4" type="video/mp4">
+            <source src="assets/005.5 Lets Sing with Popeye (1934).webm" type="video/webm">
+            <track id="en" kind="captions" label="english (captions)" srclang="en" src="subtitles/captions(2).vtt">
+        </video>
+
+        <div class="block" id="controls">
+            <form id="video_form">
+                <fieldset>
+                    <legend>Playback Controls</legend>
+                    <input type="button" id="play_button" onclick="playVideo(vid)" value="Play" />
+                    <input type="button" id="pause_button" onclick="pauseVideo(vid)" value="Pause" />
+                </fieldset>
+                <fieldset>
+                    <legend>Playback Speed</legend>
+                    <input type=button id="ff" onclick="playRate(vid,2)" value="fast forward >>" />
+                    <input type=button id="slo" onclick="playRate(vid,.5)" value="slo mo >" />
+                    <input type=button id="normal" onclick="playRate(vid,1)" value="normal >" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="bubble hide">
+        <p>Test</p>
+    </div>
+</body>
+
+</html>
